@@ -364,6 +364,8 @@
     <NMakeOutput>..\..\Binaries\HTML5\Decade-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\Decade\ProximityMine.cpp" />
+    <ClInclude Include="..\..\Source\Decade\ProximityMine.h" />
     <None Include="..\..\Decade.uproject" />
     <None Include="..\..\Source\Decade.Target.cs" />
     <None Include="..\..\Source\DecadeEditor.Target.cs" />

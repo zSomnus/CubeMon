@@ -82,6 +82,9 @@
     <ClInclude Include="..\..\Source\Decade\HealKit.h">
       <Filter>Source\Decade</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Decade\ProximityMine.h">
+      <Filter>Source\Decade</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Decade\Caltrop.cpp">
@@ -91,6 +94,9 @@
       <Filter>Source\Decade</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Decade\HealKit.cpp">
+      <Filter>Source\Decade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Decade\ProximityMine.cpp">
       <Filter>Source\Decade</Filter>
     </ClCompile>
   </ItemGroup>

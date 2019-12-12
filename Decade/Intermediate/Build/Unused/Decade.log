@@ -2,7 +2,7 @@
   Creating makefile for DecadeEditor (ini files are newer than makefile)
   Parsing headers for DecadeEditor
     Running UnrealHeaderTool "E:\CubeMon\Decade\Decade.uproject" "E:\CubeMon\Decade\Intermediate\Build\Win64\DecadeEditor\Development\DecadeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for DecadeEditor in 5.4837941 seconds
+  Reflection code generated for DecadeEditor in 5.8743585 seconds
   Using Visual Studio 2019 14.24.28314 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Distributing 6 actions to XGE
   --------------------Build System Warning---------------------------------------
@@ -12,14 +12,14 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  LaunchPad.gen.cpp (0:00.96 at +0:00)
-  Decade.init.gen.cpp (0:00.73 at +0:00)
-  LaunchPad.cpp (0:24.07 at +0:01)
-  UE4Editor-Decade-0005.dll (0:01.09 at +0:25)
-     Creating library E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0005.suppressed.lib and object E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0005.suppressed.exp
-  UE4Editor-Decade-0005.lib (0:00.14 at +0:26)
-     Creating library E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0005.lib and object E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0005.exp
-  DecadeEditor.target (0:00.18 at +0:27)
+  ProximityMine.gen.cpp (1:37.73 at +0:00)
+  Decade.init.gen.cpp (0:01.90 at +1:37)
+  ProximityMine.cpp (1:06.81 at +1:39)
+  UE4Editor-Decade-0008.dll (0:02.42 at +2:46)
+     Creating library E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0008.suppressed.lib and object E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0008.suppressed.exp
+  UE4Editor-Decade-0008.lib (0:00.14 at +2:48)
+     Creating library E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0008.lib and object E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0008.exp
+  DecadeEditor.target (0:00.17 at +2:49)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -27,5 +27,5 @@
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 27.53 seconds
-  Total execution time: 35.94 seconds
+  Total time in XGE executor: 169.55 seconds
+  Total execution time: 177.90 seconds

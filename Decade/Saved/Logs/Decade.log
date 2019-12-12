@@ -903,3 +903,114 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.12.12-16.35.46:268][894]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData" FILE="E:/CubeMon/Decade/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset" SILENT=true
 [2019.12.12-16.35.47:327][894]LogSavePackage: Moving 'E:/CubeMon/Decade/Saved/FirstPersonExampleMap_BuiltDataFEE7FAE74456D1D317E722985DCBDA0C.tmp' to 'E:/CubeMon/Decade/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
 [2019.12.12-16.35.48:235][957]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2019.12.12-17.55.14:387][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.080 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:466][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.14:467][860]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.081 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-17.55.15:297][862]LogHttp: Warning: 0000021BE6C8CCC0: request failed, libcurl error: 56 (Failure when receiving data from the peer)
+[2019.12.12-17.55.15:298][862]LogHttp: Warning: 0000021BE6C8CCC0: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x21bc1bd7f70 [can pipeline])
+[2019.12.12-17.55.15:299][862]LogHttp: Warning: 0000021BE6C8CCC0: libcurl info message cache 1 (Re-using existing connection! (#48) with host datarouter.ol.epicgames.com)
+[2019.12.12-17.55.15:303][862]LogHttp: Warning: 0000021BE6C8CCC0: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (52.45.123.19) port 443 (#48))
+[2019.12.12-17.55.15:304][862]LogHttp: Warning: 0000021BE6C8CCC0: libcurl info message cache 3 (We are completely uploaded and fine)
+[2019.12.12-17.55.15:304][862]LogHttp: Warning: 0000021BE6C8CCC0: libcurl info message cache 4 (OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054)
+[2019.12.12-17.55.15:304][862]LogHttp: Warning: 0000021BE6C8CCC0: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2019.12.12-17.55.15:304][862]LogHttp: Warning: 0000021BE6C8CCC0: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2019.12.12-17.55.15:304][862]LogHttp: Warning: 0000021BE6C8CCC0: libcurl info message cache 7 (Closing connection 48)
+[2019.12.12-17.55.15:366][863]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD39E6640-4199-AA00-48EE-0694A150DEBD%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.22.3-7053642%2B%2B%2BUE4%2BRelease-4.22&UserID=0cc0bd6a44e8ec8f8640b0b1b2b1f5a5%7Cab59eb98fbb44824812a0a58cb1b2d0f%7C49788787-0847-41ad-baf0-1f65f72531a4&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2019.12.12-17.55.43:746][947]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (29.360 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-18.04.18:123][491]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.12-18.04.56:648][710]Candidate modules for hot reload:
+[2019.12.12-18.04.56:648][710]  Decade
+[2019.12.12-18.04.56:649][710]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Decade,7049 Win64 Development -TargetType=Editor -Project="E:/CubeMon/Decade/Decade.uproject" "E:/CubeMon/Decade/Decade.uproject"  -IgnoreJunk]
+[2019.12.12-18.07.44:054][710]CompilerResultsLog: New page: Compilation - Dec 12, 2019, 8:07:44 AM
+[2019.12.12-18.07.44:054][710]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\CubeMon).
+[2019.12.12-18.07.44:054][710]CompilerResultsLog: Creating makefile for DecadeEditor (ini files are newer than makefile)
+[2019.12.12-18.07.44:054][710]CompilerResultsLog: Parsing headers for DecadeEditor
+[2019.12.12-18.07.44:054][710]CompilerResultsLog:   Running UnrealHeaderTool "E:\CubeMon\Decade\Decade.uproject" "E:\CubeMon\Decade\Intermediate\Build\Win64\DecadeEditor\Development\DecadeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.12.12-18.07.44:054][710]CompilerResultsLog: Reflection code generated for DecadeEditor in 16.4997359 seconds
+[2019.12.12-18.07.44:054][710]CompilerResultsLog: Using Visual Studio 2019 14.24.28314 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.12.12-18.07.44:054][710]CompilerResultsLog: Distributing 6 actions to XGE
+[2019.12.12-18.07.44:054][710]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: License is invalid:
+[2019.12.12-18.07.44:055][710]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2019.12.12-18.07.44:055][710]CompilerResultsLog:     This build will run in standalone mode.
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: 
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: -------------------------------------------------------------------------------
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: ProximityMine.gen.cpp (2:21.34 at +0:00)
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: Decade.init.gen.cpp (0:01.76 at +2:21)
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: ProximityMine.cpp (0:01.14 at +2:23)
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: UE4Editor-Decade-7049.dll (0:01.53 at +2:24)
+[2019.12.12-18.07.44:055][710]CompilerResultsLog:    Creating library E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-7049.suppressed.lib and object E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-7049.suppressed.exp
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: UE4Editor-Decade-7049.lib (0:00.14 at +2:25)
+[2019.12.12-18.07.44:055][710]CompilerResultsLog:    Creating library E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-7049.lib and object E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-7049.exp
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: DecadeEditor.target (0:01.40 at +2:26)
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: ---------------------- Done ----------------------
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: 
+[2019.12.12-18.07.44:055][710]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: 
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: 1 build system warning(s):
+[2019.12.12-18.07.44:055][710]CompilerResultsLog:    - License is invalid
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: 
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: Total time in XGE executor: 147.81 seconds
+[2019.12.12-18.07.44:055][710]CompilerResultsLog: Total execution time: 167.28 seconds
+[2019.12.12-18.07.44:055][710]LogMainFrame: MainFrame: Module compiling took 167.410 seconds
+[2019.12.12-18.07.44:164][710]LogUObjectHash: Compacting FUObjectHashTables data took   7.44ms
+[2019.12.12-18.07.44:164][710]LogBlueprintActionDatabase: Requesting refresh due to module change: Decade (unloaded)
+[2019.12.12-18.07.44:208][710]LogClass: Could not find existing class ProximityMine in package /Script/Decade for HotReload, assuming new class
+[2019.12.12-18.07.44:224][710]LogBlueprintActionDatabase: Requesting refresh due to module change: Decade (loaded)
+[2019.12.12-18.07.44:225][710]LogContentBrowser: Native class hierarchy updated for 'Decade' in 0.0010 seconds. Added 9 classes and 2 folders.
+[2019.12.12-18.07.44:230][710]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2019.12.12-18.07.44:318][710]LogUObjectHash: Compacting FUObjectHashTables data took   2.94ms
+[2019.12.12-18.07.44:319][710]LogBlueprintActionDatabase: Requesting refresh due to hot reload
+[2019.12.12-18.07.44:438][710]LogContentBrowser: Native class hierarchy populated in 0.0147 seconds. Added 2742 classes and 663 folders.
+[2019.12.12-18.07.44:438][710]Display: HotReload took 167.8s.
+[2019.12.12-18.07.44:439][710]Warning: HotReload operation took 167.8s.
+[2019.12.12-18.07.44:651][710]LogVSAccessor: Warning: Couldn't open file 'E:/CubeMon/Decade/Source/Decade/ProximityMine.cpp'.
+[2019.12.12-18.07.44:707][710]LogSlate: Window 'Add C++ Class' being destroyed
+[2019.12.12-18.07.45:302][711]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-18.07.45:302][711]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.12-18.07.45:304][711]LogHotReload: New module detected: UE4Editor-Decade-7049.dll
+[2019.12.12-18.07.45:332][712]LogHotReload: Starting Hot-Reload from IDE
+[2019.12.12-18.07.45:481][712]LogUObjectHash: Compacting FUObjectHashTables data took   5.92ms
+[2019.12.12-18.07.45:481][712]LogBlueprintActionDatabase: Requesting refresh due to module change: Decade (unloaded)
+[2019.12.12-18.07.45:486][712]LogBlueprintActionDatabase: Requesting refresh due to module change: Decade (loaded)
+[2019.12.12-18.07.45:487][712]LogContentBrowser: Native class hierarchy updated for 'Decade' in 0.0003 seconds. Added 9 classes and 2 folders.
+[2019.12.12-18.07.45:492][712]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2019.12.12-18.07.45:533][712]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2019.12.12-18.07.45:533][712]LogBlueprintActionDatabase: Requesting refresh due to hot reload
+[2019.12.12-18.07.45:551][712]LogContentBrowser: Native class hierarchy populated in 0.0083 seconds. Added 2742 classes and 663 folders.
+[2019.12.12-18.07.45:552][712]Display: HotReload took  0.2s.
