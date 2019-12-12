@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeDecade_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x4FAB46AA,
+				0xA180A411,
 				0xBA8CFD27,
 				METADATA_PARAMS(nullptr, 0)
 			};
