@@ -1,0 +1,75 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\CubeMon).
+  Creating makefile for DecadeEditor (game project files are newer)
+  Parsing headers for DecadeEditor
+    Running UnrealHeaderTool "E:\CubeMon\Decade\Decade.uproject" "E:\CubeMon\Decade\Intermediate\Build\Win64\DecadeEditor\Development\DecadeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for DecadeEditor in 5.7446689 seconds
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0001.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0002.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0003.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0005.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0006.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0007.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0008.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0009.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0010.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0011.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0012.dll
+  Deleted hot-reload file: D:\Decade\Binaries\Win64\UE4Editor-Decade-0018.dll
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0001.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0002.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0003.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0005.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0006.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0007.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0008.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0009.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0010.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0011.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0012.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0014.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0016.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0017.lib
+  Deleted hot-reload file: D:\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade-0018.lib
+  Using Visual Studio 2019 14.24.28314 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Distributing 23 actions to XGE
+  --------------------Build System Warning---------------------------------------
+  License is invalid:
+      License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+      This build will run in standalone mode.
+  
+  -------------------------------------------------------------------------------
+  --------------------Project: Default-------------------------------------------
+  SharedPCH.Engine.cpp (0:17.12 at +0:00)
+  PlayerHPWidget.cpp (0:03.48 at +0:17)
+  Caltrop.cpp (0:07.12 at +0:20)
+  Decade.cpp (0:00.46 at +0:27)
+  DecadeCharacter.cpp (0:03.40 at +0:28)
+  DecadeGameMode.cpp (0:00.81 at +0:31)
+  DecadeHUD.cpp (0:00.79 at +0:32)
+  DecadeProjectile.cpp (0:00.70 at +0:33)
+  LaunchPad.cpp (0:00.53 at +0:33)
+  HealKit.cpp (0:06.67 at +0:34)
+  Caltrop.gen.cpp (0:00.64 at +0:41)
+  DecadeCharacter.gen.cpp (0:00.76 at +0:41)
+  DecadeGameMode.gen.cpp (0:00.71 at +0:42)
+  DecadeHUD.gen.cpp (0:00.71 at +0:43)
+  DecadeProjectile.gen.cpp (0:00.64 at +0:44)
+  HealKit.gen.cpp (0:00.62 at +0:44)
+  LaunchPad.gen.cpp (0:00.62 at +0:45)
+  PlayerHPWidget.gen.cpp (0:02.71 at +0:45)
+  Decade.init.gen.cpp (0:00.59 at +0:48)
+  Default.rc2 (0:00.17 at +0:49)
+  UE4Editor-Decade.dll (0:01.28 at +0:49)
+     Creating library E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade.suppressed.lib and object E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade.suppressed.exp
+  UE4Editor-Decade.lib (0:00.78 at +0:50)
+     Creating library E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade.lib and object E:\CubeMon\Decade\Intermediate\Build\Win64\UE4Editor\Development\Decade\UE4Editor-Decade.exp
+  DecadeEditor.target (0:00.15 at +0:51)
+  ---------------------- Done ----------------------
+  
+      Rebuild All: 1 succeeded, 0 failed, 0 skipped
+  
+  1 build system warning(s):
+     - License is invalid
+  
+  Total time in XGE executor: 51.91 seconds
+  Total execution time: 59.54 seconds

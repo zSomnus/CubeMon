@@ -1,2 +1,0 @@
-D:\CubeMon\CubeMon\Intermediate\Build\Win64\UE4Editor\Development\CubeMon\Definitions.CubeMon.h
-D:\CubeMon\CubeMon\Source\CubeMon\CubeMon.h
