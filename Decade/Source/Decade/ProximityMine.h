@@ -35,6 +35,8 @@ private:
 
 	UMaterialInstanceDynamic* Material;
 
+	bool bInRange;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

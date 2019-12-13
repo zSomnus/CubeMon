@@ -3,6 +3,7 @@
 #include "DecadeProjectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
+#include "Cubemon.h"
 
 ADecadeProjectile::ADecadeProjectile() 
 {
@@ -37,7 +38,13 @@ void ADecadeProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
+		auto cubemon = Cast<ACubemon>(OtherActor);
+		if (cubemon != nullptr)
+		{
+			cubemon->HP -= 0.1f;
+		}
 
 		Destroy();
 	}
+
 }

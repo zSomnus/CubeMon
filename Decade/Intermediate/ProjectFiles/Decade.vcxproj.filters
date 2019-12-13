@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Decade.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5C49FB1B-F797-4011-B1BC-06C42CFA03FB}</UniqueIdentifier>
+      <UniqueIdentifier>{69A9C4E4-7BEC-470E-99A2-2DD08D54FC2A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Decade.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{59184CED-830A-4D75-A9CC-14391C185E99}</UniqueIdentifier>
+      <UniqueIdentifier>{8D1569D0-E00D-4134-BA98-96E7BEE74F7D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,12 +30,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Decade">
-      <UniqueIdentifier>{DBA76D0C-509D-4EB7-973B-36EB37D68E87}</UniqueIdentifier>
+      <UniqueIdentifier>{B43FB9F5-072D-4CA8-A3AE-62EF61701241}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Decade\Caltrop.cpp">
       <Filter>Source\Decade</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Decade\Caltrop.h">
+      <Filter>Source\Decade</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Decade\Cubemon.cpp">
+      <Filter>Source\Decade</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Decade\Cubemon.h">
       <Filter>Source\Decade</Filter>
     </ClInclude>
     <None Include="..\..\Source\Decade\Decade.Build.cs">
@@ -95,5 +101,15 @@
     <ClInclude Include="..\..\Source\Decade\ProximityMine.h">
       <Filter>Source\Decade</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Decade\CubemonHP.h">
+      <Filter>Source\Decade</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Decade\CubemonHP.cpp">
+      <Filter>Source\Decade</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

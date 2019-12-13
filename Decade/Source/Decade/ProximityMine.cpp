@@ -59,6 +59,7 @@ void AProximityMine::Activate()
 
 		if (Player != nullptr)
 		{
+			bInRange = true;
 			//Player->HP -= 0.1f;
 			GEngine->AddOnScreenDebugMessage(0, 0.1f, FColor::Black, "Player");
 			Material->SetScalarParameterValue(TEXT("AlphaValue"), 1.0f);
@@ -68,11 +69,20 @@ void AProximityMine::Activate()
 			GetWorldTimerManager().SetTimer(timer, this, &AProximityMine::Explode, Delay, false);
 			//GetWorldTimerManager().SetTimer(TimerHandle, this, &AProximityMine::Explode, Delay, false);
 		}
+		else
+		{
+			bInRange = false;
+		}
 	}
 }
 
 void AProximityMine::Explode()
 {
+	auto player = Cast<ADecadeCharacter>(Player);
+	if (this->GetActorLocation().Distance(this->GetActorLocation(), player->GetActorLocation()) <= Distance)
+	{
+		Player->HP -= 0.2f;
+	}
 	GEngine->AddOnScreenDebugMessage(0, 0.1, FColor::White, "NOOOOOOOOOOOO");
 	//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), Particle, GetTransform());
 	Destroy();
