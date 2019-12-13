@@ -155,6 +155,9 @@ void ADecadeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 
 	PlayerInputComponent->BindAction("Lootbox", IE_Pressed, this, &ADecadeCharacter::Lootbox);
 	PlayerInputComponent->BindAction("Furthest", IE_Pressed, this, &ADecadeCharacter::Furthest);
+	PlayerInputComponent->BindAction("Sort", IE_Pressed, this, &ADecadeCharacter::SortCubemonHP);
+
+	PlayerInputComponent->BindAction("Laser", IE_Pressed, this, &ADecadeCharacter::LaserFire);
 }
 
 void ADecadeCharacter::OnFire()
@@ -351,6 +354,81 @@ void ADecadeCharacter::Furthest()
 		if (Furthest != nullptr)
 		{
 			Furthest->HP -= 0.2f;
+		}
+	}
+}
+
+void ADecadeCharacter::InsertionSort(TArray<ACubemon*> arr)
+{
+	int n = arr.Num();
+	for (int i = 1; i < n; i++)
+	{
+		float key = arr[i]->HP;
+		int j = i - 1;
+
+		while (j >= 0 && arr[j]->HP < key)
+		{
+			arr[j + 1]->HP = arr[j]->HP;
+			j = j - 1;
+		}
+		arr[j + 1]->HP = key;
+	}
+}
+
+void ADecadeCharacter::SortCubemonHP()
+{
+	TArray<TEnumAsByte<EObjectTypeQuery>> query;
+	TArray<AActor*> ignore;
+	TArray<AActor*> out;
+
+	UKismetSystemLibrary::SphereOverlapActors(this, this->GetActorLocation(), Radius, query, ACubemon::StaticClass(), ignore, out);
+	TArray<ACubemon*> CubemonArray;
+	const TArray<ACubemon*> sortArray;
+
+	for (auto actor : out)
+	{
+		auto cubemon = Cast<ACubemon>(actor);
+
+		if (cubemon != nullptr)
+		{
+			CubemonArray.Add(cubemon);
+		}
+	}
+	InsertionSort(CubemonArray);
+	for (auto cubemon : sortArray)
+	{
+		if (cubemon != nullptr)
+		{
+			//FString name = FString::Printf(cubemon->GetName());
+			FString result = FString::Printf(TEXT(" HP: %f"), cubemon->HP);
+			GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Yellow, cubemon->GetName().Append(result));
+		}
+	}
+}
+
+void ADecadeCharacter::LaserFire()
+{
+	TArray<TEnumAsByte<EObjectTypeQuery>> query;
+	TArray<AActor*> ignore;
+	TArray<AActor*> out;
+	TArray<FHitResult> hit;
+
+	FVector ForwardVector = FirstPersonCameraComponent->GetForwardVector();
+	FVector Start = FP_Gun->GetComponentLocation();
+	FVector End = Start + (ForwardVector * LaserRange);
+	FCollisionQueryParams CollisionParams;
+	DrawDebugLine(GetWorld(), Start, End, FColor::Purple, true);
+	UKismetSystemLibrary::LineTraceMulti(this, Start, End, ETraceTypeQuery::TraceTypeQuery2, true, ignore, EDrawDebugTrace::ForDuration, hit, true);
+
+	for (auto actor : hit)
+	{
+		ACubemon* cubemon = Cast<ACubemon>(actor.Actor);
+		if (cubemon != nullptr)
+		{
+			float Damage = 0.8f / pow(2, actor.FaceIndex);
+			cubemon->HP -= Damage;
+			FString result = FString::Printf(TEXT("Damage: %f"), hit.Num());
+			GEngine->AddOnScreenDebugMessage(0, 5.0f, FColor::Red, result);
 		}
 	}
 }

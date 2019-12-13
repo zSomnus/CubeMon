@@ -22,7 +22,7 @@ public:
 		class UStaticMeshComponent* MeshComponentSmall;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-		float HP;
+		float HP = 1.f;
 
 	UPROPERTY(VisibleAnywhere)
 		UWidgetComponent* WidgetComponent;

@@ -102,6 +102,9 @@ public:
 	UPROPERTY(EditAnywhere)
 		float Radius = 500.f;
 
+	UPROPERTY(EditAnywhere)
+		float LaserRange;
+
 protected:
 	
 	/** Fires a projectile. */
@@ -131,6 +134,12 @@ protected:
 	void Lootbox();
 
 	void Furthest();
+
+	void InsertionSort(TArray<class ACubemon*> arr);
+
+	void SortCubemonHP();
+
+	void LaserFire();
 
 	struct TouchData
 	{
