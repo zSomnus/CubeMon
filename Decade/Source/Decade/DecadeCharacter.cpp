@@ -13,6 +13,7 @@
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 #include "PlayerHPWidget.h"
 #include "Engine.h"
+#include "Cubemon.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -153,6 +154,7 @@ void ADecadeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ADecadeCharacter::LookUpAtRate);
 
 	PlayerInputComponent->BindAction("Lootbox", IE_Pressed, this, &ADecadeCharacter::Lootbox);
+	PlayerInputComponent->BindAction("Furthest", IE_Pressed, this, &ADecadeCharacter::Furthest);
 }
 
 void ADecadeCharacter::OnFire()
@@ -316,6 +318,40 @@ void ADecadeCharacter::Lootbox()
 	else
 	{
 		GEngine->AddOnScreenDebugMessage(0, 1.f, FColor::Orange, "Legendary Item");
+	}
+}
+
+void ADecadeCharacter::Furthest()
+{
+	TArray<TEnumAsByte<EObjectTypeQuery>> query;
+	TArray<AActor*> ignore;
+	TArray<AActor*> out;
+
+	UKismetSystemLibrary::SphereOverlapActors(this, this->GetActorLocation(), Radius, query, ACubemon::StaticClass(), ignore, out);
+	if (out.Num() > 0)
+	{
+		ACubemon* Furthest = Cast<ACubemon>(out.Last());
+		float FurthestDistance = 0; // Furthest distance
+
+		for (auto actor : out)
+		{
+			auto cubemon = Cast<ACubemon>(actor);
+
+			if (cubemon != nullptr)
+			{
+				float DeltaDistance = this->GetActorLocation().Distance(actor->GetActorLocation(), this->GetActorLocation());
+				if (DeltaDistance > FurthestDistance)
+				{
+					FurthestDistance = DeltaDistance;
+					Furthest = Cast<ACubemon>(actor);
+				}
+			}
+		}
+	
+		if (Furthest != nullptr)
+		{
+			Furthest->HP -= 0.2f;
+		}
 	}
 }
 

@@ -99,6 +99,9 @@ public:
 	UPROPERTY(EditAnywhere)
 		float Legendary;
 
+	UPROPERTY(EditAnywhere)
+		float Radius = 500.f;
+
 protected:
 	
 	/** Fires a projectile. */
@@ -126,6 +129,8 @@ protected:
 	void LookUpAtRate(float Rate);
 
 	void Lootbox();
+
+	void Furthest();
 
 	struct TouchData
 	{

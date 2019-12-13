@@ -42,6 +42,10 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Radius_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Radius;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Legendary_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Legendary;
@@ -146,6 +150,13 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 		{ "ModuleRelativePath", "DecadeCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Radius_MetaData[] = {
+		{ "Category", "DecadeCharacter" },
+		{ "ModuleRelativePath", "DecadeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Radius = { "Radius", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADecadeCharacter, Radius), METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Radius_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Radius_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Legendary_MetaData[] = {
 		{ "Category", "DecadeCharacter" },
@@ -335,6 +346,7 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Mesh1P = { "Mesh1P", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADecadeCharacter, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Mesh1P_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Mesh1P_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADecadeCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Radius,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Legendary,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Rare,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Common,
@@ -385,7 +397,7 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADecadeCharacter, 3832502796);
+	IMPLEMENT_CLASS(ADecadeCharacter, 257114536);
 	template<> DECADE_API UClass* StaticClass<ADecadeCharacter>()
 	{
 		return ADecadeCharacter::StaticClass();

@@ -42,6 +42,10 @@ void EmptyLinkFunctionForGeneratedCodeCubemon() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HP;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshComponentSmall_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshComponentSmall;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
@@ -75,6 +79,14 @@ void EmptyLinkFunctionForGeneratedCodeCubemon() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACubemon_Statics::NewProp_HP = { "HP", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACubemon, HP), METADATA_PARAMS(Z_Construct_UClass_ACubemon_Statics::NewProp_HP_MetaData, ARRAY_COUNT(Z_Construct_UClass_ACubemon_Statics::NewProp_HP_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACubemon_Statics::NewProp_MeshComponentSmall_MetaData[] = {
+		{ "Category", "Cubemon" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Cubemon.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACubemon_Statics::NewProp_MeshComponentSmall = { "MeshComponentSmall", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACubemon, MeshComponentSmall), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACubemon_Statics::NewProp_MeshComponentSmall_MetaData, ARRAY_COUNT(Z_Construct_UClass_ACubemon_Statics::NewProp_MeshComponentSmall_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACubemon_Statics::NewProp_MeshComponent_MetaData[] = {
 		{ "Category", "Cubemon" },
 		{ "EditInline", "true" },
@@ -85,6 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeCubemon() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACubemon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACubemon_Statics::NewProp_WidgetComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACubemon_Statics::NewProp_HP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACubemon_Statics::NewProp_MeshComponentSmall,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACubemon_Statics::NewProp_MeshComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACubemon_Statics::StaticCppClassTypeInfo = {
@@ -114,7 +127,7 @@ void EmptyLinkFunctionForGeneratedCodeCubemon() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACubemon, 3667018939);
+	IMPLEMENT_CLASS(ACubemon, 4256447660);
 	template<> DECADE_API UClass* StaticClass<ACubemon>()
 	{
 		return ACubemon::StaticClass();

@@ -17,7 +17,9 @@ public:
 	ACubemon();
 
 	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* MeshComponent;
+		class UStaticMeshComponent* MeshComponent;
+	UPROPERTY(VisibleAnywhere)
+		class UStaticMeshComponent* MeshComponentSmall;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 		float HP;

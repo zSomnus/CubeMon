@@ -14,6 +14,8 @@ ACubemon::ACubemon()
 	
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
 	RootComponent = MeshComponent;
+	MeshComponentSmall = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponentSmall"));
+	MeshComponentSmall->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
 	WidgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("Widget"));
 	WidgetComponent->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
@@ -45,6 +47,11 @@ void ACubemon::Tick(float DeltaTime)
 		WidgetComponent->SetWorldRotation(camera->GetCameraRotation());
 		WidgetComponent->AddLocalRotation(FRotator(0, 180, 0));
 
+	}
+
+	if (HP < 0.0f || HP == 0.0f)
+	{
+		Destroy();
 	}
 }
 

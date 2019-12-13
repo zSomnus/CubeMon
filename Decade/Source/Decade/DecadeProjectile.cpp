@@ -38,12 +38,13 @@ void ADecadeProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
-		auto cubemon = Cast<ACubemon>(OtherActor);
-		if (cubemon != nullptr)
-		{
-			cubemon->HP -= 0.1f;
-		}
 
+		Destroy();
+	}
+	auto cubemon = Cast<ACubemon>(OtherActor);
+	if (cubemon != nullptr)
+	{
+		cubemon->HP -= 0.1f;
 		Destroy();
 	}
 
