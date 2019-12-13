@@ -57,7 +57,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AHealKit); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AHealKit)
 
 
-#define Decade_Source_Decade_HealKit_h_12_PRIVATE_PROPERTY_OFFSET
+#define Decade_Source_Decade_HealKit_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__bCanHeal() { return STRUCT_OFFSET(AHealKit, bCanHeal); }
+
+
 #define Decade_Source_Decade_HealKit_h_9_PROLOG
 #define Decade_Source_Decade_HealKit_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

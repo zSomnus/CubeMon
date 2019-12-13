@@ -42,6 +42,22 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Legendary_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Legendary;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Rare_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Rare;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Common_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Common;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Chance_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Chance;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUsingMotionControllers_MetaData[];
 #endif
 		static void NewProp_bUsingMotionControllers_SetBit(void* Obj);
@@ -78,6 +94,11 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HP_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanHeal_MetaData[];
+#endif
+		static void NewProp_bCanHeal_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanHeal;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_L_MotionController_MetaData[];
 #endif
@@ -125,6 +146,34 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 		{ "ModuleRelativePath", "DecadeCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Legendary_MetaData[] = {
+		{ "Category", "DecadeCharacter" },
+		{ "ModuleRelativePath", "DecadeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Legendary = { "Legendary", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADecadeCharacter, Legendary), METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Legendary_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Legendary_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Rare_MetaData[] = {
+		{ "Category", "DecadeCharacter" },
+		{ "ModuleRelativePath", "DecadeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Rare = { "Rare", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADecadeCharacter, Rare), METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Rare_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Rare_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Common_MetaData[] = {
+		{ "Category", "DecadeCharacter" },
+		{ "ModuleRelativePath", "DecadeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Common = { "Common", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADecadeCharacter, Common), METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Common_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Common_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Chance_MetaData[] = {
+		{ "Category", "DecadeCharacter" },
+		{ "ModuleRelativePath", "DecadeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Chance = { "Chance", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADecadeCharacter, Chance), METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Chance_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Chance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bUsingMotionControllers_MetaData[] = {
 		{ "Category", "Gameplay" },
@@ -199,6 +248,17 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_HP = { "HP", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADecadeCharacter, HP), METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_HP_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_HP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bCanHeal_MetaData[] = {
+		{ "Category", "DecadeCharacter" },
+		{ "ModuleRelativePath", "DecadeCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bCanHeal_SetBit(void* Obj)
+	{
+		((ADecadeCharacter*)Obj)->bCanHeal = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bCanHeal = { "bCanHeal", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADecadeCharacter), &Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bCanHeal_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bCanHeal_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bCanHeal_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_L_MotionController_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -275,6 +335,10 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Mesh1P = { "Mesh1P", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADecadeCharacter, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Mesh1P_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Mesh1P_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADecadeCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Legendary,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Rare,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Common,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_Chance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bUsingMotionControllers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_FireAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_FireSound,
@@ -284,6 +348,7 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_WidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_HP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_bCanHeal,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_L_MotionController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_R_MotionController,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecadeCharacter_Statics::NewProp_FirstPersonCameraComponent,
@@ -320,7 +385,7 @@ void EmptyLinkFunctionForGeneratedCodeDecadeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADecadeCharacter, 5212514);
+	IMPLEMENT_CLASS(ADecadeCharacter, 3832502796);
 	template<> DECADE_API UClass* StaticClass<ADecadeCharacter>()
 	{
 		return ADecadeCharacter::StaticClass();

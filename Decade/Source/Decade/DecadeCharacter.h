@@ -48,6 +48,9 @@ class ADecadeCharacter : public ACharacter
 public:
 	ADecadeCharacter();
 
+	UPROPERTY(VisibleAnywhere)
+		bool bCanHeal;
+
 protected:
 	virtual void BeginPlay();
 
@@ -87,6 +90,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	uint32 bUsingMotionControllers : 1;
 
+	UPROPERTY(VisibleAnywhere)
+		float Chance;
+	UPROPERTY(EditAnywhere)
+		float Common;
+	UPROPERTY(EditAnywhere)
+		float Rare;
+	UPROPERTY(EditAnywhere)
+		float Legendary;
+
 protected:
 	
 	/** Fires a projectile. */
@@ -112,6 +124,8 @@ protected:
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
 	 */
 	void LookUpAtRate(float Rate);
+
+	void Lootbox();
 
 	struct TouchData
 	{

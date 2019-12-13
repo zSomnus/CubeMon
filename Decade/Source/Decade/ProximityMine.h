@@ -16,6 +16,9 @@ public:
 	AProximityMine();
 
 	UPROPERTY(VisibleAnywhere)
+		class ADecadeCharacter* Player;
+
+	UPROPERTY(VisibleAnywhere)
 		UStaticMeshComponent* MeshComponent;
 
 	UPROPERTY(EditAnywhere)
@@ -27,10 +30,10 @@ public:
 	UPROPERTY(EditAnywhere)
 		UParticleSystem* Particle;
 
+
 private:
 
 	UMaterialInstanceDynamic* Material;
-	float AlphaValue;
 
 protected:
 	// Called when the game starts or when spawned
@@ -38,8 +41,12 @@ protected:
 
 	void Activate();
 
+	void Explode();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	virtual void NotifyHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit) override;
 
 };

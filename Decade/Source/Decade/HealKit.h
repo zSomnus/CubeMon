@@ -16,6 +16,9 @@ public:
 	AHealKit();
 
 	UPROPERTY(VisibleAnywhere)
+		class ADecadeCharacter* Player;
+
+	UPROPERTY(VisibleAnywhere)
 		UStaticMeshComponent* MeshComponent;
 
 	UPROPERTY(EditAnywhere)
@@ -24,9 +27,16 @@ public:
 	UPROPERTY(EditAnywhere)
 		class USoundCue* Sound;
 
+private:
+	UPROPERTY(VisibleAnywhere)
+	bool bCanHeal;
+	FTimerHandle TimerHandle;
+	float HealRate;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	void Heal();
 
 public:	
 	// Called every frame

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Decade.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A4DA9D31-AAD2-47C8-9E58-CF2E11E5A1F7}</UniqueIdentifier>
+      <UniqueIdentifier>{5C49FB1B-F797-4011-B1BC-06C42CFA03FB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Decade.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{48FD823E-1795-441E-BBAE-B2614636BE04}</UniqueIdentifier>
+      <UniqueIdentifier>{59184CED-830A-4D75-A9CC-14391C185E99}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Decade">
-      <UniqueIdentifier>{238AF4F3-A737-48AD-B5CF-93FB2B47D9B2}</UniqueIdentifier>
+      <UniqueIdentifier>{DBA76D0C-509D-4EB7-973B-36EB37D68E87}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Decade\Caltrop.cpp">
+      <Filter>Source\Decade</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Decade\Caltrop.h">
+      <Filter>Source\Decade</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Decade\Decade.Build.cs">
       <Filter>Source\Decade</Filter>
     </None>
@@ -65,39 +71,29 @@
     <ClInclude Include="..\..\Source\Decade\DecadeProjectile.h">
       <Filter>Source\Decade</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Decade\HealKit.cpp">
+      <Filter>Source\Decade</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Decade\HealKit.h">
+      <Filter>Source\Decade</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Decade\LaunchPad.cpp">
+      <Filter>Source\Decade</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Decade\LaunchPad.h">
+      <Filter>Source\Decade</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Decade\PlayerHPWidget.cpp">
       <Filter>Source\Decade</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Decade\PlayerHPWidget.h">
       <Filter>Source\Decade</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\Decade\Caltrop.h">
-      <Filter>Source\Decade</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Decade\LaunchPad.h">
-      <Filter>Source\Decade</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Decade\HealKit.h">
-      <Filter>Source\Decade</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Decade\ProximityMine.h">
-      <Filter>Source\Decade</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\Decade\Caltrop.cpp">
-      <Filter>Source\Decade</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Decade\LaunchPad.cpp">
-      <Filter>Source\Decade</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Decade\HealKit.cpp">
-      <Filter>Source\Decade</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Decade\ProximityMine.cpp">
       <Filter>Source\Decade</Filter>
     </ClCompile>
+    <ClInclude Include="..\..\Source\Decade\ProximityMine.h">
+      <Filter>Source\Decade</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

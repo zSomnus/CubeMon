@@ -12,6 +12,7 @@
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 #include "PlayerHPWidget.h"
+#include "Engine.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -89,6 +90,10 @@ void ADecadeCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+
+	Common = 0.6f;
+	Rare = 0.3f;
+	Legendary = 0.1f;
 	
 	if (WidgetClass != nullptr)
 	{
@@ -146,6 +151,8 @@ void ADecadeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAxis("TurnRate", this, &ADecadeCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ADecadeCharacter::LookUpAtRate);
+
+	PlayerInputComponent->BindAction("Lootbox", IE_Pressed, this, &ADecadeCharacter::Lootbox);
 }
 
 void ADecadeCharacter::OnFire()
@@ -292,6 +299,24 @@ void ADecadeCharacter::LookUpAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+}
+
+void ADecadeCharacter::Lootbox()
+{
+	FMath Random;
+	Chance = Random.FRandRange(0, Common + Rare + Legendary);
+	if (Chance <= Common)
+	{
+		GEngine->AddOnScreenDebugMessage(0, 1.f, FColor::Green, "Common Item");
+	}
+	else if (Chance <= (Common + Rare))
+	{
+		GEngine->AddOnScreenDebugMessage(0, 1.f, FColor::Purple, "Rare Item");
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(0, 1.f, FColor::Orange, "Legendary Item");
+	}
 }
 
 bool ADecadeCharacter::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)

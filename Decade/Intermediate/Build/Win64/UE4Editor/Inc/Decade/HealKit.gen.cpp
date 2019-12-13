@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeHealKit() {}
 	UPackage* Z_Construct_UPackage__Script_Decade();
 	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	DECADE_API UClass* Z_Construct_UClass_ADecadeCharacter_NoRegister();
 // End Cross Module References
 	void AHealKit::StaticRegisterNativesAHealKit()
 	{
@@ -34,6 +35,11 @@ void EmptyLinkFunctionForGeneratedCodeHealKit() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanHeal_MetaData[];
+#endif
+		static void NewProp_bCanHeal_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCanHeal;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Sound_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Sound;
@@ -45,6 +51,10 @@ void EmptyLinkFunctionForGeneratedCodeHealKit() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Player_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Player;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -59,6 +69,17 @@ void EmptyLinkFunctionForGeneratedCodeHealKit() {}
 		{ "ModuleRelativePath", "HealKit.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHealKit_Statics::NewProp_bCanHeal_MetaData[] = {
+		{ "Category", "HealKit" },
+		{ "ModuleRelativePath", "HealKit.h" },
+	};
+#endif
+	void Z_Construct_UClass_AHealKit_Statics::NewProp_bCanHeal_SetBit(void* Obj)
+	{
+		((AHealKit*)Obj)->bCanHeal = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AHealKit_Statics::NewProp_bCanHeal = { "bCanHeal", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AHealKit), &Z_Construct_UClass_AHealKit_Statics::NewProp_bCanHeal_SetBit, METADATA_PARAMS(Z_Construct_UClass_AHealKit_Statics::NewProp_bCanHeal_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHealKit_Statics::NewProp_bCanHeal_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHealKit_Statics::NewProp_Sound_MetaData[] = {
 		{ "Category", "HealKit" },
@@ -81,10 +102,19 @@ void EmptyLinkFunctionForGeneratedCodeHealKit() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHealKit_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHealKit, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHealKit_Statics::NewProp_MeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHealKit_Statics::NewProp_MeshComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHealKit_Statics::NewProp_Player_MetaData[] = {
+		{ "Category", "HealKit" },
+		{ "ModuleRelativePath", "HealKit.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHealKit_Statics::NewProp_Player = { "Player", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHealKit, Player), Z_Construct_UClass_ADecadeCharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHealKit_Statics::NewProp_Player_MetaData, ARRAY_COUNT(Z_Construct_UClass_AHealKit_Statics::NewProp_Player_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHealKit_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHealKit_Statics::NewProp_bCanHeal,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHealKit_Statics::NewProp_Sound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHealKit_Statics::NewProp_Duration,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHealKit_Statics::NewProp_MeshComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHealKit_Statics::NewProp_Player,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AHealKit_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AHealKit>::IsAbstract,
@@ -113,7 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeHealKit() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHealKit, 2472912692);
+	IMPLEMENT_CLASS(AHealKit, 2976626845);
 	template<> DECADE_API UClass* StaticClass<AHealKit>()
 	{
 		return AHealKit::StaticClass();
